@@ -1,0 +1,119 @@
+.login-view, .register-view, .forgot-password-view{
+    background-image: linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("https://img.goodfon.com/original/3840x2160/3/e5/porsche-car-cars-sport-car-high-performance-performance-se-3.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.login-view-layout, .register-view-layout, .forgot-password-view-layout{
+    max-width: 400px;
+}
+
+.register-view, .forgot-password-view{
+    background-size: auto;
+}
+
+.glass-layout {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+}
+
+.login-actions{
+    align-items: center;
+    margin-top: -12px;
+}
+
+.register-button, .forgot-password-button{
+    margin: 0;
+}
+
+.booking-dialog-title {
+    font-size: 18px;
+}
+
+.booking-dialog-vehicle-image {
+    border-radius: 15px;
+    border: 1px solid black;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.booking-dialog-vehicle-image-hidden {
+    display: none;
+}
+
+.dialog-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    width: 100%;
+}
+
+.dialog-calendar-weekday {
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+}
+
+.dialog-calendar-legend {
+    color: var(--lumo-secondary-text-color);
+}
+
+.dialog-calendar-day {
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--lumo-contrast-20pct);
+    border-radius: 6px;
+}
+
+.availability-day-unavailable {
+    background-color: #d93025;
+    border-color: #d93025;
+    color: white;
+    font-weight: 600;
+}
+
+.booking-day-past {
+    color: #cbd5e1;
+    background-color: transparent;
+    border-color: var(--lumo-contrast-10pct);
+}
+
+.booking-day-unavailable {
+    background-color: #dc2626;
+    border-color: #b91c1c;
+    color: white;
+    font-weight: 600;
+}
+
+.booking-day-boundary {
+    background-color: #facc15;
+    border-color: #eab308;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.booking-day-inside {
+    background-color: #fef3c7;
+    border-color: #facc15;
+    color: #78350f;
+}
+
+.booking-day-selectable {
+    cursor: pointer;
+}
